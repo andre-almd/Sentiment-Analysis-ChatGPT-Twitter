@@ -1,4 +1,7 @@
-"""XXXXXXXXXXXXXXXXXX"""
+"""
+This module reads tweets related to ChatGPT from a CSV file,
+processes the data, and sends it to a Kafka topic for further analysis.
+"""
 
 import time
 import pandas as pd
@@ -30,7 +33,6 @@ producer = KafkaProducer(bootstrap_servers=SERVER,
 
 #print(f'Connected to Kafka. Broker Metadata: {producer.metrics()}')
 
-
 for _, tweet in df.iterrows():
     sending = []
 
@@ -50,4 +52,4 @@ for _, tweet in df.iterrows():
     except Exception as e:
         print(f"Error sending message: {e}")
 
-    time.sleep(1)
+    time.sleep(0.5)
