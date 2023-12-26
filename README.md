@@ -2,6 +2,7 @@
 ## **This is a project from the Data Scientist Training at the [Data Science Academy](https://www.datascienceacademy.com.br/)**
 
 ![](img/img.png)
+Image created with Midjourney AI
 
 ChatGPT is the AI-based conversational system offered by OpenAI. It was launched in late 2022 and has since garnered attention from the general public, who have finally realized how AI has evolved and is already among us. 
 
