@@ -46,7 +46,7 @@ The entire project was executed in a **Linux** environment.
 
     ```python3 src/kafka_producer.py```
 
-9. Open a new terminal to execute the Kafka consumer and consume data from the Kafka topic with PySpark streaming:
+9. Open a new terminal to execute the Kafka consumer and consume data from the Kafka topic with PySpark streaming. Execute script the inside virtual enviroment:
 
     ```python3 src/kafka_consumer.py```
 
