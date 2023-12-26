@@ -24,23 +24,29 @@ The entire project was executed in a **Linux** environment.
 
 2. Create a virtual environment named venv using [virtual enviroment](https://virtualenv.pypa.io/en/latest/installation.html).
 
-3.  Make the create_kafka_topic.sh file executable with the following command:
+3. Activate the virtual enviroment
+
+4. Install the libraries required:
+
+    ```pip3 install -r requirements.txt```
+
+5.  Make the create_kafka_topic.sh file executable with the following command:
 
     ```chmod +x create_kafka_topic.sh```
 
-4. With Docker installed, run the following command in the terminal to create containers with Kafka and Zookeeper.
+6. With Docker installed, run the following command in the terminal to create containers with Kafka and Zookeeper.
 
     ```make run```
 
-5. After creating the containers, execute the following command in the same terminal to create the Kafka topic:
+7. After creating the containers, execute the following command in the same terminal to create the Kafka topic:
 
     ```./create_kafka_topic.sh```
 
-6. After creating the topic, start the Kafka producer in the same terminal to begin sending tweet data to the topic:
+8. After creating the topic, start the Kafka producer in the same terminal to begin sending tweet data to the topic:
 
     ```python3 src/kafka_producer.py```
 
-7. Open a new terminal to execute the Kafka consumer and consume data from the Kafka topic with PySpark streaming:
+9. Open a new terminal to execute the Kafka consumer and consume data from the Kafka topic with PySpark streaming:
 
     ```python3 src/kafka_consumer.py```
 
