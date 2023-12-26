@@ -2,5 +2,5 @@
 venv
 
 # Data
-data/*
+data/twitter_Jan_Mar.csv
 jars/
