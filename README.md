@@ -60,3 +60,6 @@ The entire project was executed in a **Linux** environment.
 
 - **kafka_consumer.py**:
     This Python script integrates Apache Spark and Kafka to conduct real-time sentiment analysis on streaming Twitter data. It defines a sentiment analysis function using NLTK's VADER analyzer, configures Spark to read and process data from Kafka, and continuously analyzes sentiments, presenting insights such as total tweet count, sentiment class distribution, and percentages.
+
+\
+![](img/video.gif)
